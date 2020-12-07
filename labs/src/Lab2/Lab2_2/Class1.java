@@ -10,8 +10,8 @@ package Lab2.Lab2_2;
 
 public class Class1 {
     public static void main(String[] args) {
-        Class2 two = new Class2();//Створення об'єктів
+       // Class2 two = new Class2();//Створення об'єктів
         Class3 three = new Class3();
-        Class4 four = new Class4();
+      //  Class4 four = new Class4();
     }
 }
