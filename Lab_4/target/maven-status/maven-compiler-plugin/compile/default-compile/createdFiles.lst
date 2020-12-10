@@ -1,2 +1,5 @@
 org\igorchuchman\Application.class
-org\igorchuchman\controllers\HelloController.class
+org\igorchuchman\entity\Game.class
+org\igorchuchman\resource\HelloController.class
+org\igorchuchman\entity\User.class
+org\igorchuchman\dto\UserDTO.class
