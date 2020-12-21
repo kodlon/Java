@@ -1,25 +1,20 @@
 package org.igorchuchman.dto;
 
-import org.igorchuchman.entity.Game;
-import org.igorchuchman.entity.User;
-
 import java.time.LocalDate;
 
 public class CommentDTO {
     private Long id;
     private String userName;
-    private String gameName;
     private LocalDate generatedDate;
     private int rating;
-    private String comment;
+    private String comment;;
 
     public CommentDTO() {
     }
 
-    public CommentDTO(Long id, String userName, String gameName, LocalDate generatedDate, int rating, String comment) {
+    public CommentDTO(Long id, String userName, LocalDate generatedDate, int rating, String comment) {
         this.id = id;
         this.userName = userName;
-        this.gameName = gameName;
         this.generatedDate = generatedDate;
         this.rating = rating;
         this.comment = comment;
@@ -39,14 +34,6 @@ public class CommentDTO {
 
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    public String getGameName() {
-        return gameName;
-    }
-
-    public void setGameName(String gameName) {
-        this.gameName = gameName;
     }
 
     public LocalDate getGeneratedDate() {

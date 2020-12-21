@@ -5,9 +5,11 @@ import java.util.List;
 
 public class User {
     private Long id;
+    private String userName;
     private String firstName;
     private String lastName;
     private LocalDate birth;
+    private int countComments;
 
     private List<Game> userGameComment;
 
@@ -15,12 +17,14 @@ public class User {
     public User() {
     }
 
-    public User(final Long id, String firstName, String lastName, LocalDate birth, List<Game> userComment) {
+    public User(Long id, String userName, String firstName, String lastName, LocalDate birth, int countComments, List<Game> userGameComment) {
         this.id = id;
+        this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birth = birth;
-        this.userGameComment = userComment;
+        this.countComments = countComments;
+        this.userGameComment = userGameComment;
     }
 
     public Long getId() {
@@ -29,6 +33,14 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getFirstName() {
@@ -53,6 +65,14 @@ public class User {
 
     public void setBirth(LocalDate birth) {
         this.birth = birth;
+    }
+
+    public int getCountComments() {
+        return countComments;
+    }
+
+    public void setCountComments(int countComments) {
+        this.countComments = countComments;
     }
 
     public List<Game> getUserGameComment() {

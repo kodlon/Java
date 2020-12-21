@@ -10,6 +10,8 @@ public class GameToGameDTOMapper {
         game.setId(gameDTO.getId());
         game.setGameName(gameDTO.getGameName());
         game.setGenre(gameDTO.getGenre());
+        game.setDevelopers(gameDTO.getDevelopers());
+        game.setPublishers(gameDTO.getPublishers());
         game.setCountComments(gameDTO.getCountComments());
 
         return game;
@@ -21,6 +23,8 @@ public class GameToGameDTOMapper {
         gameDTO.setId(game.getId());
         gameDTO.setGameName(game.getGameName());
         gameDTO.setGenre(game.getGenre());
+        gameDTO.setDevelopers(game.getDevelopers());
+        gameDTO.setPublishers(game.getPublishers());
         gameDTO.setCountComments(game.getCountComments());
 
         return gameDTO;

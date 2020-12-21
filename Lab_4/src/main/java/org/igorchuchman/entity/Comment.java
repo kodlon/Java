@@ -5,7 +5,6 @@ import java.time.LocalDate;
 public class Comment {
     private Long id;
     private String userName;
-    private String gameName;
     private LocalDate generatedDate;
     private int rating;
     private String comment;
@@ -13,10 +12,9 @@ public class Comment {
     public Comment() {
     }
 
-    public Comment(Long id, String userName, String gameName, LocalDate generatedDate, int rating, String comment) {
+    public Comment(Long id, String userName, LocalDate generatedDate, int rating, String comment) {
         this.id = id;
         this.userName = userName;
-        this.gameName = gameName;
         this.generatedDate = generatedDate;
         this.rating = rating;
         this.comment = comment;
@@ -36,14 +34,6 @@ public class Comment {
 
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    public String getGameName() {
-        return gameName;
-    }
-
-    public void setGameName(String gameName) {
-        this.gameName = gameName;
     }
 
     public LocalDate getGeneratedDate() {
