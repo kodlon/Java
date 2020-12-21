@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class User {
+    private Long id;
     private String firstName;
     private String lastName;
     private LocalDate birth;
@@ -14,11 +15,20 @@ public class User {
     public User() {
     }
 
-    public User(String firstName, String lastName, LocalDate birth, List<Game> userComment) {
+    public User(final Long id, String firstName, String lastName, LocalDate birth, List<Game> userComment) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birth = birth;
         this.userGameComment = userComment;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {

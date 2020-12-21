@@ -1,16 +1,15 @@
-package org.igorchuchman.entity;
+package org.igorchuchman.dto;
 
-public class Game {
+public class GameDTO {
     private  Long id;
     private String gameName;
     private String genre;
     private int countComments;
 
-
-    public Game() {
+    public GameDTO() {
     }
 
-    public Game(Long id, String gameName, String genre, int countComments) {
+    public GameDTO(Long id, String gameName, String genre, int countComments) {
         this.id = id;
         this.gameName = gameName;
         this.genre = genre;
