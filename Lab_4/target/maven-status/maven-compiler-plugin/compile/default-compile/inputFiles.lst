@@ -1,5 +1,11 @@
 E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\Application.java
+E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\mapper\GameToGameDTOMapper.java
 E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\entity\User.java
 E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\resource\HelloController.java
+E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\dto\CommentDTO.java
 E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\dto\UserDTO.java
+E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\entity\Comment.java
+E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\mapper\UserToUserDTOMapper.java
 E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\entity\Game.java
+E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\dto\GameDTO.java
+E:\Desktop\Projects\IDEAjava\Lab_4\src\main\java\org\igorchuchman\mapper\CommentToCommentDTOMapper.java

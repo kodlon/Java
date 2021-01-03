@@ -1,5 +1,11 @@
 org\igorchuchman\Application.class
 org\igorchuchman\entity\Game.class
-org\igorchuchman\resource\HelloController.class
+org\igorchuchman\dto\CommentDTO.class
+org\igorchuchman\mapper\CommentToCommentDTOMapper.class
 org\igorchuchman\entity\User.class
+org\igorchuchman\mapper\GameToGameDTOMapper.class
+org\igorchuchman\entity\Comment.class
+org\igorchuchman\resource\HelloController.class
+org\igorchuchman\dto\GameDTO.class
 org\igorchuchman\dto\UserDTO.class
+org\igorchuchman\mapper\UserToUserDTOMapper.class
