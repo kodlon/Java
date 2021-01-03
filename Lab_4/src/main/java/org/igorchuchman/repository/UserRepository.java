@@ -53,6 +53,7 @@ public class UserRepository {
 
         final User savedUser = getUserById(user.getId());
 
+        savedUser.setUserName(user.getUserName());
         savedUser.setBirth(user.getBirth());
         savedUser.setLastName(user.getLastName());
         savedUser.setFirstName(user.getFirstName());
