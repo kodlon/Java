@@ -77,8 +77,17 @@ public class GameRepository {
 
     }
 
-    public static boolean checkSavedGames() {
+    public static boolean checkSavedGames(Long id) {
         if(savedGames.isEmpty()) return false;
-        return true;
+        else{
+            for (Game game:
+                    savedGames) {
+                if (game.getId().equals(id)){
+                    game.setCountComments(game.getCountComments() + 1);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

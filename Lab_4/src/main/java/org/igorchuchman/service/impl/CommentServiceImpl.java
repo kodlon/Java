@@ -37,11 +37,11 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public CommentDTO createComment(CommentDTO commentDTO) {
+    public CommentDTO createComment(CommentDTO commentDTO, Long id) {
         if(commentDTO.getId() != null){
             throw new ServiceException(400, "Comment shouldn't have an id ", null);
         }
-        if(!GameRepository.checkSavedGames()){
+        if(!GameRepository.checkSavedGames(id)){
             throw new ServiceException(400, "No game found ", null);
         }
 

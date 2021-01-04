@@ -26,17 +26,17 @@ public class CommentResource {
     }
 
     @PostMapping("/games/{id}/comments")
-    public CommentDTO createComment(final /*@Valid*/ @RequestBody CommentDTO commentDTO){
-        return commentService.createComment(commentDTO);
+    public CommentDTO createComment(final /*@Valid*/ @RequestBody CommentDTO commentDTO, @PathVariable Long id){
+        return commentService.createComment(commentDTO, id);
     }
-//
-//    @PutMapping("/games")
-//    public CommentDTO getCommentById(final @RequestBody CommentDTO commentDTO){
-//        return commentService.updateComment(commentDTO);
-//    }
-//
-//    @DeleteMapping("/games/{id}")
-//    public void deleteCommentById(final @PathVariable Long id){
-//        commentService.deleteCommentById(id);
-//    }
+
+    @PutMapping("/games/{id}/comments/{id}")
+    public CommentDTO getCommentById(final @RequestBody CommentDTO commentDTO){
+        return commentService.updateComment(commentDTO);
+    }
+
+    @DeleteMapping("/games/{id}/comments/{id}")
+    public void deleteCommentById(final @PathVariable Long id){
+        commentService.deleteCommentById(id);
+    }
 }
