@@ -1,7 +1,6 @@
 package org.igorchuchman.service.impl;
 
 import org.igorchuchman.dto.GameDTO;
-
 import org.igorchuchman.exception.ServiceException;
 import org.igorchuchman.mapper.GameToGameDTOMapper;
 import org.igorchuchman.repository.GameRepository;

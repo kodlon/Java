@@ -2,7 +2,9 @@ package org.igorchuchman.mapper;
 
 import org.igorchuchman.dto.GameDTO;
 import org.igorchuchman.entity.Game;
+import org.springframework.stereotype.Component;
 
+@Component
 public class GameToGameDTOMapper {
     public Game toEntity(final GameDTO gameDTO){
         final Game game = new Game();

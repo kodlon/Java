@@ -20,7 +20,7 @@ public class GameRepository {
     }
 
     private static Long lastId = 1L;
-    private List<Game> savedGames;
+    private static List<Game> savedGames;
 
     public Game getGameById(final Long id){
         return savedGames.stream()
@@ -75,5 +75,10 @@ public class GameRepository {
                 .filter(e -> !e.getId().equals(id))
                 .collect(Collectors.toList());
 
+    }
+
+    public static boolean checkSavedGames() {
+        if(savedGames.isEmpty()) return false;
+        return true;
     }
 }

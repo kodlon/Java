@@ -2,7 +2,9 @@ package org.igorchuchman.mapper;
 
 import org.igorchuchman.dto.CommentDTO;
 import org.igorchuchman.entity.Comment;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CommentToCommentDTOMapper {
     public Comment toEntity (final CommentDTO commentDTO){
         final Comment comment = new Comment();
